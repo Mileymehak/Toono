@@ -1,24 +1,24 @@
-// use an integer for version numbers
-version = 1
-
+version = 2
 
 cloudstream {
-    // All of these properties are optional, you can safely remove them
-
-    description = "Lorem Ipsum"
-    authors = listOf("Cloudburst")
+    language = "hi"
+    description = "SKIP ADS on the SITE every 24 hours to Play, has Hindi Dubbed Cartoons"
+    authors = listOf("anon")
 
     /**
-    * Status int as the following:
-    * 0: Down
-    * 1: Ok
-    * 2: Slow
-    * 3: Beta only
-    * */
+     * Status int as the following:
+     * 0: Down
+     * 1: Ok
+     * 2: Slow
+     * 3: Beta only
+     * */
     status = 1 // will be 3 if unspecified
+    tvTypes = listOf(
+        "TvSeries",
+        "Movie",
+        "Anime",
+        "Cartoon"
+    )
 
-    // List of video source types. Users are able to filter for extensions in a given category.
-    // You can find a list of avaliable types here:
-    // https://recloudstream.github.io/cloudstream/html/app/com.lagradost.cloudstream3/-tv-type/index.html
-    tvTypes = listOf("Others")
+    iconUrl = "https://toono.in/wp-content/uploads/2023/07/Toono-Logo-300x-1.pngg"
 }
